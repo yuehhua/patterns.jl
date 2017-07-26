@@ -1,0 +1,10 @@
+pic = Picture()
+add!(pic, Line(5.0))
+add!(pic, Text("ABC"))
+add!(pic, Circle(5.0))
+draw(pic)
+
+pic2 = Picture()
+add!(pic2, Text("DEF"))
+add!(pic2, pic)
+draw(pic2)

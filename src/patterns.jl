@@ -1,7 +1,7 @@
 __precompile__(true)
 
 module patterns
-    import Base: add!, remove!
+    import Base: add!, remove!, notify
 
     export
 
@@ -24,9 +24,18 @@ module patterns
     VerticalScrollBar,
     HorizontalScrollBar,
     draw,
-    scroll
+    scroll,
+
+    # observer
+    Newspaper,
+    Subscriber,
+    SubscriberA,
+    SubscriberB,
+    AppleNews,
+    BananaNews
 
     include("composite.jl")
     include("decorator.jl")
+    include("observer.jl")
 
 end # module

@@ -32,10 +32,19 @@ module patterns
     SubscriberA,
     SubscriberB,
     AppleNews,
-    BananaNews
+    BananaNews,
+
+    # chain_of_responsibility
+    Account,
+    can_pay,
+    pay,
+    Bank,
+    Paypal,
+    Bitcoin
 
     include("composite.jl")
     include("decorator.jl")
     include("observer.jl")
+    include("chain_of_responsibility.jl")
 
 end # module

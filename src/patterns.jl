@@ -61,7 +61,10 @@ module patterns
     isopen,
     lock!,
     unlock!,
-    open
+    open,
+
+    # singleton
+    Singleton
 
 
     include("composite.jl")
@@ -70,7 +73,7 @@ module patterns
     include("chain_of_responsibility.jl")
     include("template.jl")
     include("state.jl")
-
+    include("singleton.jl")
 
 
 end # module

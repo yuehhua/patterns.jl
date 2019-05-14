@@ -6,7 +6,8 @@ tests = ["chain_of_responsibility",
          "decorator",
          "observer",
          "template",
-         "state"]
+         "state",
+         "singleton"]
 
 @info "Running tests:"
 

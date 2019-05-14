@@ -1,0 +1,7 @@
+name = "patterns"
+uuid = "1f59917c-7604-11e9-04d6-b5adb05005f0"
+authors = ["Yueh-Hua Tu <a504082002@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

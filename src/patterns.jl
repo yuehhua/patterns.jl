@@ -1,7 +1,7 @@
 __precompile__(true)
 
 module patterns
-    import Base: add!, remove!, notify
+    import Base: notify
 
     export
 
@@ -9,7 +9,7 @@ module patterns
     Graphic,
     Picture,
     Line,
-    Text,
+    Text_,
     Circle,
     add!,
     remove!,
@@ -33,6 +33,7 @@ module patterns
     SubscriberB,
     AppleNews,
     BananaNews,
+    subscribe,
 
     # chain_of_responsibility
     Account,
@@ -40,11 +41,24 @@ module patterns
     pay,
     Bank,
     Paypal,
-    Bitcoin
+    Bitcoin,
+
+    # template
+    Beverage,
+    Coffee,
+    Tea,
+    prepare,
+    boil_water,
+    brew!,
+    pour_in_cup,
+    add_condiments!
+
 
     include("composite.jl")
     include("decorator.jl")
     include("observer.jl")
     include("chain_of_responsibility.jl")
+    include("template.jl")
+
 
 end # module

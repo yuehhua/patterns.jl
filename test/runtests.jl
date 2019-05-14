@@ -1,5 +1,17 @@
 using patterns
-using Base.Test
+using Test
 
-# write your own tests here
-@test 1 == 2
+tests = ["chain_of_responsibility",
+         "composite",
+         "decorator",
+         "observer",
+         "template"]
+
+@info "Running tests:"
+
+for t in tests
+    tfile = string(t, ".jl")
+    println()
+    println()
+    include(tfile)
+end

@@ -1,7 +1,7 @@
 __precompile__(true)
 
 module patterns
-    import Base: notify
+    import Base: notify, isopen, open
 
     export
 
@@ -51,7 +51,17 @@ module patterns
     boil_water,
     brew!,
     pour_in_cup,
-    add_condiments!
+    add_condiments!,
+
+    # state
+    State,
+    Locked,
+    Unlocked,
+    Gate,
+    isopen,
+    lock!,
+    unlock!,
+    open
 
 
     include("composite.jl")
@@ -59,6 +69,8 @@ module patterns
     include("observer.jl")
     include("chain_of_responsibility.jl")
     include("template.jl")
+    include("state.jl")
+
 
 
 end # module

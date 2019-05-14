@@ -1,3 +1,5 @@
+@info "Test chain of responsibility pattern..."
+
 bank = Bank(100)
 paypal = Paypal(300)
 bitcoin = Bitcoin(1000)

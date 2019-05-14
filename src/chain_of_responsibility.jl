@@ -1,5 +1,7 @@
 """
-
+The concept is that, I want to use my account to pay for something.
+I can just pick one for payment. If the balance is less than the payment, it will switch to next one.
+If the handler cannot deal with the event or the responsibility, the handler dispatch to the next.
 """
 
 abstract type Account end

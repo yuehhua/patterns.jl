@@ -27,11 +27,11 @@ end
 draw(l::Line) = println("Draw a $(l.length) cm line.")
 
 
-struct Text <: Graphic
+struct Text_ <: Graphic
     str::String
 end
 
-draw(t::Text) = println(t.str)
+draw(t::Text_) = println(t.str)
 
 
 struct Circle <: Graphic

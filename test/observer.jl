@@ -1,3 +1,5 @@
+@info "Test observer pattern..."
+
 a = AppleNews()
 b = BananaNews()
 suba = SubscriberA("Joe")

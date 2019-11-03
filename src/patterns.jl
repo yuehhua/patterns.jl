@@ -26,6 +26,10 @@ module patterns
     draw,
     scroll,
 
+    # iterator
+    AddOne,
+    ArrayIterator,
+
     # observer
     Newspaper,
     Subscriber,
@@ -69,6 +73,7 @@ module patterns
 
     include("composite.jl")
     include("decorator.jl")
+    include("iterator.jl")
     include("observer.jl")
     include("chain_of_responsibility.jl")
     include("template.jl")

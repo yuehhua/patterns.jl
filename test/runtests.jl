@@ -4,6 +4,7 @@ using Test
 tests = ["chain_of_responsibility",
          "composite",
          "decorator",
+         "iterator",
          "observer",
          "template",
          "state",
